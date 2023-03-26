@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 9</h1>
+    <p>Дано масив імен. Сформувати масив з перших літер цих імен.</p>
+
+    <script>
+      // Дано масив імен
+      let names = ["Anna", "Olga", "Andrij", "Diana", "Natasha"]
+      // Використовуємо .map щоб Сформувати масив з перших літер цих імен
+      const firstLettersNamesList = names.map((name) => name[0])
+      // 3.Виведення результату
+      document.write(`Масив із перших літер імен - ${firstLettersNamesList}`)
+    </script>
+  </body>
+</html>

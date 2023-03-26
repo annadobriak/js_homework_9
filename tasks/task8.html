@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 8</h1>
+    <p>
+      Дано масив номерів авто. Сформувати новий масив тих, які починаються на
+      «А»
+    </p>
+
+    <script>
+      // Дано масив номерів авто
+      let arrNumbersCar = [
+        "AX1234КА",
+        "AК1234AB",
+        "KA1234HH",
+        "AI1234BH",
+        "CA1234BH",
+      ]
+      // Використовуємо .filter щоб cформувати новий масив номерів, які відповідають умові
+      const arrNumbersCarFirstLetterA = arrNumbersCar.filter(
+        (numberCar) => numberCar[0] === "A"
+      )
+      // 3.Виведення результату
+      document.write(
+        `Масив номерів, які починаються на «А» - ${arrNumbersCarFirstLetterA}`
+      )
+    </script>
+  </body>
+</html>

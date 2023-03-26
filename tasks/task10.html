@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 10</h1>
+    <p>
+      Дано масив цін у грн. Податок складає 20%. Сформувати масив, який буде
+      містити величину сплаченого податку у грн.
+    </p>
+
+    <script>
+      // Дано масив цін
+      let arrPricesList = [1000, 1425, 1056, 458, 125, 148, 1001, 999, 1229]
+      // Формуємо новий масив з величин сплачених податків
+      const arrayPaidTaxes = arrPricesList.map((price) => price * 0.2)
+      // 3.Виведення результату
+      document.write(`Масив з величин сплачених податків - ${arrayPaidTaxes}`)
+    </script>
+  </body>
+</html>

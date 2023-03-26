@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 4</h1>
+    <h5>---------- Тут використати цикл for..of -----------</h5>
+    <p>Дано масив елементів. Вивести на екран елементи, що більші за 100</p>
+
+    <script>
+      //функція для створення масиву із рандомними значеннями
+      function getRandomArrayElements(
+        numberElements,
+        minValue = 50,
+        maxValue = 250
+      ) {
+        let arr = []
+        for (let i = 0; i < numberElements; i++) {
+          const randNum =
+            minValue + Math.floor(Math.random() * (maxValue - minValue + 1))
+          arr.push(randNum)
+        }
+        return arr
+      }
+      //Вводимо кількість елементів масиву
+      const numberElements = parseInt(
+        prompt(`Введіть кількість єлементів масиву`)
+      )
+      // Викликаємо функцію
+      const randomArrayElements = getRandomArrayElements(numberElements)
+      // перебираємо ітерований об"єкт, знаходимо елементи більші за 100
+      for (let element of randomArrayElements) {
+        if (element > 100) document.write(`${element}<br>`)
+      }
+    </script>
+  </body>
+</html>

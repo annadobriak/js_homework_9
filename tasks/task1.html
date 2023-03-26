@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 1</h1>
+    <p>
+      Користувач вводить кількість елементів. Створити масив, що складається з
+      вказаної кількості елементів заповнених нулями.
+    </p>
+
+    <script>
+      //Користувач вводить кількість елементів.
+      const numberElements = parseInt(
+        prompt("Введіть кількість елементів масиву", "0")
+      )
+      // Створюємо новий масив і заповнюємо його нулями
+      let arrElements = new Array(numberElements).fill(0)
+
+      // 3.Виведення результату
+      document.write(`Масив із ${numberElements} елементів - ${arrElements}`)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 2</h1>
+    <p>
+      Користувач вводить кількість елементів. Створити масив, у якому перша
+      половина заповнена 1-цями, а друга заповнена 7-ками.
+    </p>
+
+    <script>
+      //Користувач вводить кількість елементів.
+      const arrNumberElements = parseInt(
+        prompt("Введіть кількість елементів масиву", "0")
+      )
+      // Знаходимо індекс середнього елементу масиву
+      let arrMiddleIndex = Math.floor(arrNumberElements / 2)
+      //Створюємо масив і заповнюємо його
+      let arrElements = new Array(arrNumberElements).fill(1, 0, arrMiddleIndex)
+      arrElements.fill(7, arrMiddleIndex)
+
+      // 3.Виведення результату
+      document.write(`Масив із ${arrNumberElements} елементів - ${arrElements}`)
+    </script>
+  </body>
+</html>
